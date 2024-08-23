@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Month Alert</title>
+    <script>
+        function alertCurrentMonth() {
+            const months = [
+                'January', 'February', 'March', 'April', 'May', 'June',
+                'July', 'August', 'September', 'October', 'November', 'December'
+            ];
+            
+            const now = new Date();
+            
+            const currentMonthIndex = now.getMonth();
+            
+            const currentMonth = months[currentMonthIndex];
+            
+            alert('Current month is: ' + currentMonth);
+        }
+
+        window.onload = alertCurrentMonth;
+    </script>
+</head>
+<body>
+    <h1>Current Month Alert</h1>
+    <p>Check your browser's alert to see the current month.</p>
+</body>
+</html>
